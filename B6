@@ -1,0 +1,31 @@
+/*Write a C program to input radius of a circle from user and find diameter,
+circumference and area of the circle. */
+//A=P*r^2
+//C=2Pr
+////////////////////////////
+/// By Lindsay Voglewede ///
+////////////////////////////
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+
+
+int main()
+{
+    //Declare variables
+    float P=3.1416; //Constant
+    float A=0;      //Area
+    float C=0;      //Circumference
+    float r=0;      //Radius
+    
+    //Input
+    printf("What is the radius? \n");
+    scanf("%f",&r);
+    A=P*(pow(r,2));
+    C=2*P*r;
+    //Output
+    printf("The Area is = %f \n",A);
+    printf("The Circumference is = %f \n",C);
+    return 0;
+}
